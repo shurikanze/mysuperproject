@@ -11,6 +11,12 @@ pipeline {
             steps {
                 sh 'echo "hello_world"'
                 }
+        stage("second") {
+            steps {
+                sh echo 'my second file "hello world"' /tmp/second.txt
+                cat /tmpsecond.txt
+                }
+            }
         }
     }
 }
