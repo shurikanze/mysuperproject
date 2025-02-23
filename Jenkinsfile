@@ -7,15 +7,15 @@ pipeline {
         timestamps ()
         }
     stages {
-        stage("first_step") {
+        stage("first_step 🚀 ") {
             steps {
                 sh 'echo "hello_world"'
             }
         }
-        stage("second") {
+        stage("second 🚀 ") {
             steps {
-                sh 'echo \'my second file "hello world"\'' /tmp/second.txt
-                cat /tmp/second.txt
+                sh 'echo \'my second file "hello world"\' > /tmp/second.txt'
+                sh 'cat /tmp/second.txt'
             }
         }
     }
